@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+grid-template-rows: repeat(9,70px);
+/*gap: 30px;*/
+row-gap: 10px;
+column-gap: 10px;
+        }
+        .child{
+            background-color: blueviolet;
+            margin-top: 10px;
+        }
+        .one{
+grid-column: 1/5;
+grid-row: 1/5;
+        }
+        .two{
+            grid-column: 1/2;
+        grid-row: 5/9;
+        }
+        .three{
+            grid-column:2/3;
+            grid-row: 5/6;
+        }
+        .four{
+            grid-column:3/4 ;
+        grid-row: 5/7;
+        }
+        .five{
+            grid-column: 4/5;
+            grid-row: 5/8;
+        }
+        .six{
+            grid-column:2/3 ;
+            grid-row:6/9;
+        }
+        .seven{
+            grid-column: 3/4;
+            grid-row:7/8  ;
+        }
+        .nine{
+            grid-column: 4/5;
+            grid-row: 8/9;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child one">1</div>
+        <div class="child two">2</div>
+        <div class="child three">3</div>
+        <div class="child four">4</div>
+        <div class="child five">5</div>
+        <div class="child six">6</div>
+        <div class="child seven">7</div>
+        <div class="child eight">8</div>
+        <div class="child nine">9</div>
+
+    </div>
+</body>
+</html>
